@@ -3,7 +3,7 @@ import zipfile
 from pathlib import Path
 
 data_path = Path('data')
-image_path =data_path/'/content/DataX'
+image_path =data_path/'"
 
 if image_path.is_dir():
   print(f"{image_path} directory exists")
@@ -14,7 +14,7 @@ else:
 
   import zipfile
 
-zip_path = '/content/DataX1.zip'
+zip_path = ''
 
 with zipfile.ZipFile(zip_path,'r') as zip_ref:
   zip_ref.extractall('/content')
@@ -27,8 +27,8 @@ def walk_through_dir(dir_path):
 
 walk_through_dir(image_path)
 
-train_dir = image_path/'/content/DataX/Train'
-test_dir = image_path/'/content/DataX/Test'
+train_dir = image_path/''
+test_dir = image_path/''
 train_dir,test_dir
 
 import torch
